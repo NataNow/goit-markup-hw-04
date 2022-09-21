@@ -332,6 +332,18 @@ html {
 .team-box {
   padding: 30px;
 }
+.team-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
 
 /* section cliens*/
 .clients-title {
