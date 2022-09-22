@@ -90,10 +90,10 @@ html {
 .header-portfolio .container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 .header-portfolio {
   height: 80px;
+  border-bottom: 1px solid #ececec;
 }
 .navigation {
   display: flex;
@@ -163,9 +163,13 @@ html {
   color: var(--accent-text-color);
 }
 
-.contact-link .contact-icons:hover,
-.contact-link .contact-icons:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--accent-text-color);
+}
+.contact-link:hover .contact-icons,
+.contact-link:focus .contact-icons {
+  fill: var(--accent-text-color);
 }
 
 .accent,
@@ -525,12 +529,13 @@ html {
 
 /* work */
 .work {
-  margin-top: 94px;
+  margin-bottom: 94px;
 }
 .work-nav {
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
+  margin-top: 94px;
 }
 .work-item:not(:last-child) {
   margin-right: 30px;
