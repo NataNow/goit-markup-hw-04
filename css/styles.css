@@ -150,7 +150,6 @@ html {
 }
 .contact-icons {
   margin-right: 10px;
-  fill: var(--accent-text-color);
 }
 .contact-link {
   display: flex;
@@ -164,8 +163,8 @@ html {
   color: var(--accent-text-color);
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.contact-link .contact-icons:hover,
+.contact-link .contact-icons:focus {
   color: var(--accent-text-color);
 }
 
