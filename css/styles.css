@@ -153,8 +153,12 @@ html {
   letter-spacing: 0.02em;
   color: inherit;
 }
-
+.contact-icons {
+  margin-right: 10px;
+}
 .contact-link {
+  display: flex;
+  align-items: center;
   color: var(--title-list-text-color);
   font-weight: 500;
 }
@@ -337,15 +341,31 @@ html {
   justify-content: space-between;
   align-items: center;
 }
-.team-social {
+
+.social-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
 }
 
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-text-color);
+}
+.team-icon {
+  fill: #afb1b8;
+}
+.social-link:hover .team-icon,
+.social-link:focus .team-icon {
+  fill: var(--primary-bg-color);
+}
 /* section cliens*/
+.clients {
+  padding-bottom: 94px;
+}
 .clients-title {
   display: flex;
   justify-content: space-between;
@@ -385,15 +405,13 @@ html {
   fill: currentColor;
 }
 /*footer*/
-.footer-name {
-  width: 145px;
-  padding-bottom: 9px;
-}
 
 .footer {
   background-color: var(--footer-bg-color);
 }
 .footer .container {
+  display: flex;
+  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -412,8 +430,63 @@ html {
   font-style: normal;
   list-style: none;
   width: 231px;
+  margin-top: 20px;
+  margin-right: 70px;
 }
 
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--accent-text-color);
+}
+.footer-icons {
+  fill: #afb1b8;
+}
+.footer-link:hover .footer-icons,
+.footer-link:focus .footer-icons {
+  fill: var(--primary-bg-color);
+}
+
+.footer-nav {
+  color: var(--primary-bg-color);
+}
+
+.footer-nav-social {
+  margin-top: 20px;
+}
+.footer-name {
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  width: 145px;
+  margin-bottom: 9px;
+}
+
+.footer-wapper {
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+}
+
+.footer-nav-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .location {
   color: var(--primary-bg-color);
   text-decoration: none;
